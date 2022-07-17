@@ -2,9 +2,9 @@ require('dotenv').config();
 const axios = require('axios').default;
 
 exports.healthCheck = (req, res) => {
-  console.log('PROCESS_ENV ', process.env);
+  console.log('PROCESS_ENV.url ', process.env.url);
   console.log('Invoking now calling dog.ceo');
-  axios.get('https://dog.ceo/api/breeds/list/all')
+  axios.get(process.env.url)
   .then((response) => {
     console.log('RESPONSE ', response?.data?.status);
     console.log('Calling Slack Webhook');
