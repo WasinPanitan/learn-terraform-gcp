@@ -11,6 +11,6 @@ resource "google_cloud_scheduler_job" "job" {
 
   http_target {
     http_method = "POST"
-    uri = google_cloudfunctions_function.function.https_trigger_url 
+    uri = google_cloudfunctions_function.health_check.https_trigger_url 
   }
 }
