@@ -1,0 +1,1 @@
+health_check_url="https://dog.ceo/api/breeds/list/all"

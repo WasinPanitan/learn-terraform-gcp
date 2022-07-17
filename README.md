@@ -5,3 +5,5 @@ TODO:
 - add `gcp-credential.json` first to interact with GCP
 
 - npm install for module in `src`
+
+- `terraform apply -var-file="testing.tfvars` to apply with `.tfvars`

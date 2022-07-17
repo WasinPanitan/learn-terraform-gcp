@@ -41,7 +41,7 @@ resource "google_cloudfunctions_function" "health_check" {
   available_memory_mb = 128
   trigger_http = true
   environment_variables = {
-    url = "https://dog.ceo/api/breeds/list/all"
+    url = var.health_check_url
   }
 
   depends_on = [
